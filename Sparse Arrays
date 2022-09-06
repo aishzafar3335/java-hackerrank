@@ -1,0 +1,12 @@
+<--- code for python---->
+
+
+def matchingStrings(strings, queries):
+    count = []
+    for x in queries:
+        c = 0
+        for y in strings:
+            if x == y:
+                c += 1
+        count.append(c)
+    return count
